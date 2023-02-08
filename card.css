@@ -10,16 +10,17 @@ body,
 html {
   background-color: rgb(29, 33, 60);
 }
-.whole{
-    display: flex;
+.whole {
+  display: flex;
   align-items: center;
-  justify-content: center;
+
   flex-direction: column;
   padding: 20px;
   min-height: 100vh;
 }
 .container {
-  
+  max-width: 800px;
+  min-height: 50%;
   box-shadow: 0 0 29px 5px rgba(0, 0, 0, 0.2);
 }
 header {
