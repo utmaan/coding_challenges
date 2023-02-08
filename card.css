@@ -8,18 +8,18 @@
 /* General Layouts */
 body,
 html {
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: rgb(29, 33, 60);
 }
-.container {
-  width: 75%;
-  max-width: 800px;
-  min-height: 50%;
-  display: flex;
+.whole{
+    display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
+  padding: 20px;
+  min-height: 100vh;
+}
+.container {
+  
   box-shadow: 0 0 29px 5px rgba(0, 0, 0, 0.2);
 }
 header {
@@ -27,8 +27,8 @@ header {
   background: rgb(38, 43, 73);
   padding: 25px;
 }
-.header_main{
-    display: flex;
+.header_main {
+  display: flex;
 }
 .company {
   margin-right: 1rem;
@@ -151,37 +151,37 @@ main {
   cursor: pointer;
 }
 
-@media (max-width:700px){
-    main{
-        flex-direction: column;
-    }
-    .jobs{
-        display:flex;
-        justify-content: space-around;
-        width: 100%;
-    }
-    .paid_time_off .title{
-        text-align: center;
-    }
-}
-@media (max-width:600px){
-.header_main{
+@media (max-width: 700px) {
+  main {
     flex-direction: column;
+  }
+  .jobs {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .paid_time_off .title {
+    text-align: center;
+  }
 }
-.title.company_name,.link{
-   text-align: center;
-}
-.company{
+@media (max-width: 600px) {
+  .header_main {
+    flex-direction: column;
+  }
+  .title.company_name,
+  .link {
+    text-align: center;
+  }
+  .company {
     flex-direction: row;
     justify-content: space-between;
-}
-.paid_time_off{
+  }
+  .paid_time_off {
     max-width: 100%;
     display: flex;
     flex-direction: column;
-}
-.paid_time_off >*{
+  }
+  .paid_time_off > * {
     max-width: 100%;
-}
-
+  }
 }
