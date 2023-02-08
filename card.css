@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: rgb(246, 249, 252);
+  box-sizing: border-box;
+  font-family: "Noto Sans Syloti Nagri", sans-serif;
+}
+/* General Layouts */
+body,
+html {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(29, 33, 60);
+}
+.container {
+  width: 75%;
+  max-width: 800px;
+  min-height: 50%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 29px 5px rgba(0, 0, 0, 0.2);
+}
+header {
+  display: flex;
+  background: rgb(38, 43, 73);
+  padding: 25px;
+}
+.header_main{
+    display: flex;
+}
+.company {
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgb(35, 39, 68);
+  padding: 25px;
+}
+.general,
+.total,
+.volunteer,
+.general_part,
+.sick {
+  display: flex;
+  justify-content: space-between;
+}
+.gen,
+.tot,
+.volun,
+.gen_part,
+.sick_part {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 30%;
+}
+/* Font Related Definitions */
+.title {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.title.pto,
+.title.name {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.review_num {
+  font-size: 0.7rem;
+  text-align: center;
+  font-weight: 500;
+}
+.detail p {
+  font-family: "roboto";
+  font-weight: 300;
+}
+.paid_time_off > *:not(h1) {
+  font-weight: 300;
+  font-size: 0.9rem;
+  font-family: "roboto";
+}
+.openings_num,
+.employee_num,
+.paid_time_off .title {
+  font-family: "roboto";
+}
+.openings_num,
+.employee_num {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.openings_num {
+  color: rgb(233, 59, 118);
+}
+/* Length and Spacing Definitions */
+.intro {
+  margin-bottom: 1rem;
+}
+.jobs > div {
+  margin: 1.5rem;
+  font-size: 0.7rem;
+}
+.jobs {
+  min-width: 30%;
+}
+.paid_time_off > * {
+  margin: 0.6rem;
+}
+.logo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+.review_icon img {
+  width: 70px;
+  height: 37px;
+}
+.next img {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+}
+.next img:hover {
+  transform: scale(1.2);
+  transition: all 1s;
+}
+.prev img {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 50%;
+  right: 50%;
+}
+.prev img:hover {
+  transform: scale(1.2);
+  transition: all 1s;
+}
+
+.link a {
+  text-decoration: none;
+  color: rgb(233, 59, 118);
+  cursor: pointer;
+}
+
+@media (max-width:700px){
+    main{
+        flex-direction: column;
+    }
+    .jobs{
+        display:flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .paid_time_off .title{
+        text-align: center;
+    }
+}
+@media (max-width:600px){
+.header_main{
+    flex-direction: column;
+}
+.title.company_name,.link{
+   text-align: center;
+}
+.company{
+    flex-direction: row;
+    justify-content: space-between;
+}
+.paid_time_off{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.paid_time_off >*{
+    max-width: 100%;
+}
+
+}
