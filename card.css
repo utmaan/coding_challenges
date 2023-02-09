@@ -15,18 +15,18 @@ html {
   align-items: center;
 justify-content: center;
   flex-direction: column;
-  padding: 20px;
+  padding: 1.5rem;
   min-height: 100vh;
 }
 .container {
   max-width: 800px;
-  min-height: 50%;
+ 
   box-shadow: 0 0 29px 5px rgba(0, 0, 0, 0.2);
 }
 header {
   display: flex;
   background: rgb(38, 43, 73);
-  padding: 25px;
+  padding: 1.5rem;
 }
 .header_main {
   display: flex;
@@ -43,7 +43,7 @@ main {
   justify-content: space-around;
   align-items: center;
   background: rgb(35, 39, 68);
-  padding: 25px;
+  padding: 2rem 1rem;
 }
 .general,
 .total,
@@ -73,6 +73,10 @@ main {
   font-size: 1.5rem;
   font-weight: 500;
 }
+.review_icon img:hover{
+transform: scale(1.2);
+transition: all 1s;
+}
 .review_num {
   font-size: 0.7rem;
   text-align: center;
@@ -84,7 +88,7 @@ main {
 }
 .paid_time_off > *:not(h1) {
   font-weight: 300;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-family: "roboto";
 }
 .openings_num,
@@ -115,19 +119,19 @@ main {
   margin: 0.6rem;
 }
 .logo img {
-  width: 100px;
-  height: 100px;
+  width: 5rem;
+  
   border-radius: 100%;
 }
 .review_icon img {
-  width: 70px;
-  height: 37px;
+  width: 4.5rem;
+  height: 2.5rem;
 }
 .next img {
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  cursor: pointer;
   position: relative;
-  top: 50%;
+  top: 41%;
   left: 50%;
 }
 .next img:hover {
@@ -135,10 +139,10 @@ main {
   transition: all 1s;
 }
 .prev img {
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  cursor: pointer;
   position: relative;
-  top: 50%;
+  top: 41%;
   right: 50%;
 }
 .prev img:hover {
@@ -148,13 +152,21 @@ main {
 
 .link a {
   text-decoration: none;
-  color: rgb(233, 59, 118);
+  color: rgb(254, 124, 167);
   cursor: pointer;
 }
+.link a:hover{
 
+  color: rgb(251, 24, 107);
+  transition: all 1s;
+}
+/* Media Queries related definations */
+
+/* Change in main section layout*/
 @media (max-width: 700px) {
   main {
     flex-direction: column;
+    padding: 2rem 0.5rem;
   }
   .jobs {
     display: flex;
@@ -165,6 +177,8 @@ main {
     text-align: center;
   }
 }
+/* Change in Header section and
+ Main section Paid Time Of section layout  */
 @media (max-width: 600px) {
   .header_main {
     flex-direction: column;
@@ -185,4 +199,60 @@ main {
   .paid_time_off > * {
     max-width: 100%;
   }
+}
+/* Smaller Devices Layout */
+@media (max-width:450px) {
+.detail p,.link a{
+  font-size: .84rem;
+}
+.link a:hover{
+  font-size: .85rem;
+  color: rgb(251, 24, 107);
+  transition: all 1s;
+}
+.title.company_name{
+  font-size: 1.5rem;
+}
+.prev img,.next img{
+  width: 2rem;
+}
+.prev img{
+  right: 0;
+}
+.next img{
+  left: 0;
+}
+header{
+  padding: 1.5rem 0;
+}
+.whole{
+  padding: 0;
+}
+main{
+  padding: 2rem 0;
+}
+div.next,div.prev{
+  position: relative;
+  width: max-content;
+}
+.general,
+.total,
+.volunteer,
+.general_part,
+.sick {
+  display: grid;
+  grid-template-columns: minmax(0,70%)  minmax(0,30%);
+}
+.gen,
+.tot,
+.volun,
+.gen_part,
+.sick_part {
+  width: 100%;
+justify-self: end;
+}
+.paid_time_off >*:not(h1){
+  font-size: 0.8rem;
+  padding: 0 0.7rem;
+}
 }
