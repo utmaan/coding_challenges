@@ -156,7 +156,6 @@ transition: all 1s;
   cursor: pointer;
 }
 .link a:hover{
-
   color: rgb(251, 24, 107);
   transition: all 1s;
 }
