@@ -1,0 +1,136 @@
+body,
+html,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans Syloti Nagri", sans-serif;
+  color: #ddd;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(38, 43, 73);
+}
+.container {
+  width: 80vw;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(38, 43, 73);
+  box-shadow: 0 0 10px rgb(38, 43, 73);
+}
+section.hero {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(20, 21, 39);
+}
+section.hero > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.title {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: .6rem;
+}
+.num{
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+section.lower {
+  width: 100%;
+  height: 45%;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+}
+div.join_cto {
+  background: linear-gradient(
+    90deg,
+    rgba(244, 89, 92, 1) 0%,
+    rgba(235, 134, 193, 1) 100%
+  );
+  height: 70%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* box-shadow: 0 0 10px -1px; */
+  border-radius: 0.5rem;
+  position: absolute;
+  top: -34%;
+}
+div.join_cto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form.signup_form {
+  font-size: 0.5rem;
+}
+div.message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0 0;
+}
+h1.cto_title {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 1);
+}
+p.description {
+  font-family: "Roboto";
+  font-size: 0.6rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+.signup_form {
+  display: flex;
+  align-items: stretch;
+  padding: 1rem 0rem 2rem;
+}
+.signup_form button {
+  color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: .1rem .2rem .5rem -2px;
+  font-weight: 700;
+  border-radius: 0 0.2rem 0.2rem 0.1rem;
+  border: 0;
+  padding: 0.5rem 1.5rem;
+  font-size: .7rem;
+}
+.signup_form button:hover{
+    color: rgba(0, 0, 0, 1);
+  background-color: rgba(255, 255, 255, 1);
+transition: all 1s;
+}
+.signup_form input {
+  background: linear-gradient(
+    90deg,
+    rgba(244, 89, 92, 1) -50%,
+    rgba(235, 134, 193, 1) 200%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  padding: 0.3rem 1rem;
+}
+input::placeholder {
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.6);
+}input:focus-visible {
+    outline-color:rgba(255, 255, 255, 0.6) ;
+}
+
+
