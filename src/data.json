@@ -1,0 +1,35 @@
+[
+    {
+        "name":"starting up",
+        "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta ratione adipisci temporibus cum atque doloremque commodi quaerat vitae cupiditate quisquam.",
+        "price":4,
+        "features":[
+            "1 Domain",
+            "Email Support",
+            "200 GB Cloud Space"
+        ],
+        "imgUrl":"assets/wheat3.webp"
+    },
+    {
+        "name":"growing business",
+        "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta ratione adipisci temporibus cum atque doloremque commodi quaerat vitae cupiditate quisquam.",
+        "price":4,
+        "features":[
+            "10 Domain",
+            "Email and Phone Support",
+            "500 GB Cloud Space"
+        ],
+        "imgUrl":"assets/wheat2.webp"
+    },
+    {
+        "name":"enterprise",
+        "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta ratione adipisci temporibus cum atque doloremque commodi quaerat vitae cupiditate quisquam.",
+        "price":4,
+        "features":[
+            "100 Domain",
+            "24/7 Email and Phone Support",
+            "Unlimited Cloud Space"
+        ],
+        "imgUrl":"assets/wheat.webp"
+    }
+]
